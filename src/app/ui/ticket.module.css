@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39&family=Oswald:wght@200..700&display=swap');
+
+.ticket {
+    display: flex;
+    font-family: "Oswald", sans-serif;
+    /*border: solid 1px rgb(214, 219, 220);*/
+    border-radius: 15px;
+}
+
+.ticket_left, .ticket_right {
+    border-radius: 15px;
+    box-shadow: #2c3e50 2px 7px 15px;
+}
+
+.ticket_left {
+    width: 600px;
+    background: #e1e1e1;
+}
+
+.ticket_left .ticket_header, .ticket_right .ticket_header {
+    padding: 5px 20px;
+    background: steelblue;
+    color: #ffffff;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.ticket_left .ticket_header .logo {
+    color: skyblue;
+}
+
+.ticket_left .ticket_body {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ticket_left .ticket_body .data {
+    width: 200px;
+}
+
+.ticket_left .ticket_body .data div {
+    padding-bottom: 10px;
+}
+
+.ticket_left .ticket_body .data div label {
+    margin-left: 15px;
+}
+
+.ticket_left .ticket_body .data div p {
+    background: skyblue;
+    letter-spacing: 2px;
+    padding: 0 5px;
+}
+
+.ticket_left .ticket_body .date > p {
+    display: flex;
+}
+
+.ticket_left .ticket_body .date > p label {
+    margin-right: 20px;
+}
+
+.ticket_left .ticket_body .date > p span {
+    font-size: 30px;
+    letter-spacing: 10px;
+    color: steelblue;
+}
+
+.ticket_left .ticket_body .date > p + div {
+    display: flex;
+}
+
+.ticket_left .ticket_body .date > p + div > div {
+    text-align: center;
+    padding: 5px 10px;
+    background: steelblue;
+    width: 70px;
+    color: #ffffff;
+}
+
+.ticket_left .ticket_body .date > p + div > div > p {
+    font-size: 1.4em;
+    font-weight: 300;
+}
+
+.ticket_left .ticket_body .date > p + div > div:nth-child(2) {
+    background: lightskyblue;
+}
+
+.ticket_left .barcode p {
+    font-family: "Libre Barcode 39", system-ui;
+    font-size: 26px;
+    transform: rotate(90deg) scale(1.5, 3.5);
+}
+
+.ticket_left .ticket_foot {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.ticket_left .ticket_foot span:nth-child(2) {
+    color: blue;
+    margin: 0 5px;
+}
+
+.ticket_left .ticket_foot span:nth-child(3) {
+    letter-spacing: 3px;
+}
+
+.ticket_right {
+    width: 260px;
+    background: #e1e1e1;
+}
+
+.ticket_right .ticket_body {
+    padding: 10px 20px;
+}
+
+.ticket_right .ticket_body div {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.ticket_right .ticket_body div label {
+    margin: 0 10px;
+}
+
+.ticket_right .ticket_body div p {
+    width: 100%;
+    background-color: #fff;
+    letter-spacing: 2px;
+    padding: 0 5px;
+}
+
+.ticket_right .ticket_foot {
+}
+
+.ticket_right .ticket_foot .flight_code {
+    display: flex;
+    background-color: skyblue;
+    padding: 5px 20px;
+}
+
+.ticket_right .ticket_foot .flight_code div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ticket_right .ticket_foot .flight_code div:nth-child(1) span:nth-child(1) {
+    background-color: steelblue;
+    padding: 2px 7px;
+    color: #ffffff;
+}
+
+.ticket_right .ticket_foot .flight_code div:nth-child(1) span:nth-child(2) {
+    font-size: 1.3em;
+    transform: scale(1.2, 0.9);
+}
+
+.ticket_right .ticket_foot .flight_code div:nth-child(2) {
+    padding: 5px 20px;
+    font-size: 2.4em;
+    font-weight: 500;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ticket_right .ticket_foot .flight_code div:nth-child(2) svg {
+    color: steelblue;
+    font-size: .5em;
+    margin: 0 5px;
+}
+
+.ticket_right .ticket_foot > div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+}
+
+.ticket_right .ticket_foot > div:nth-child(2) .title{
+    margin-left: 15px;
+}
